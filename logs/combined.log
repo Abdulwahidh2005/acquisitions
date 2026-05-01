@@ -1,0 +1,12 @@
+{"level":"info","message":"Hello from Acquisitions API!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [30/Apr/2026:17:46:10 +0000] \"GET / HTTP/1.1\" 200 13 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [30/Apr/2026:17:46:10 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions API!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [30/Apr/2026:17:46:41 +0000] \"GET / HTTP/1.1\" 200 13 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [30/Apr/2026:17:46:42 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/May/2026:04:44:52 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 137 \"-\" \"node\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/May/2026:05:18:53 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 137 \"-\" \"node\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/May/2026:05:25:10 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 62 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
+{"level":"info","message":"User abdul@example.com created successfully","service":"acquisitions-api"}
+{"email":"abdul@example.com","level":"info","message":"Attempting to sign up user","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/May/2026:05:25:45 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 114 \"-\" \"PostmanRuntime/7.51.1\"","service":"acquisitions-api"}
