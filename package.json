@@ -14,14 +14,18 @@
     "#vaidations/*": "./src/vaidations/*"
   },
   "scripts": {
+    "setup": "bash scripts/setup.sh",
     "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "dev:docker": "powershell -ExecutionPolicy Bypass -File scripts/dev-docker.ps1",
+    "dev:docker:bash": "bash scripts/dev-docker.sh"
   },
   "repository": {
     "type": "git",

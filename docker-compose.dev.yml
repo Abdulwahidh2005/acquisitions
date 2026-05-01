@@ -1,0 +1,28 @@
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    ports:
+      - '${NEON_LOCAL_PORT:-5432}:5432'
+    environment:
+      NEON_API_KEY: ${NEON_API_KEY}
+      NEON_PROJECT_ID: ${NEON_PROJECT_ID}
+      PARENT_BRANCH_ID: ${PARENT_BRANCH_ID:-}
+
+  app:
+    build:
+      context: .
+    command: npm run dev
+    ports:
+      - '${APP_PORT:-3001}:3000'
+    env_file:
+      - .env.development
+    environment:
+      DATABASE_URL: postgres://neon:npg@neon-local:5432/?sslmode=require
+      NEON_LOCAL_FETCH_ENDPOINT: http://neon-local:5432/sql
+    volumes:
+      - ./src:/app/src
+      - ./drizzle:/app/drizzle
+      - ./drizzle.config.js:/app/drizzle.config.js
+      - ./logs:/app/logs
+    depends_on:
+      - neon-local
